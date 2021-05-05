@@ -2,15 +2,17 @@
 
 describe("Testing SignUp Form",()=>{
     beforeEach(() => {
-        cy.visit('http://localhost/dashboard/signup/')
+        cy.visit('http://localhost/project/signup/')
       })
+
+      
  it("should test all input fields and select options",()=>{
-   cy.get("#signup").click()
-   cy.get("#fname").type("emmanuelayirebi12")
-   cy.get("#lname").type("david14")
-   cy.get("#email").type("roundtrip@gmail.com")
-   cy.get("#password").type("mypasword2")
-   cy.get("#submit").click()
+   cy.get("#signup").type("Emmanuel");
+   cy.get("#fname").type("emmanuelayirebi12");
+   cy.get("#lname").type("david14");
+   cy.get("#email").type("roundtrip@gmail.com");
+   cy.get("#password").type("mypasword2");
+   cy.get("#submit").click();
 
 
  })
@@ -54,7 +56,7 @@ describe("Testing SignUp Form",()=>{
 
   it("should test only the name input field and type only signup",()=>{
     cy.get("#fname").type("emmanuelayirebi12")
-    cy.get("#signup").click()
+    cy.get("#signup").type("emmanuel1")
     cy.get("#submit").click()
 
 

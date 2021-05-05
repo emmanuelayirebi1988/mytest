@@ -2,7 +2,7 @@
 
     describe("Testing Booking Form",()=>{
         beforeEach(() => {
-            cy.visit('http://localhost/dashboard/bookingForm/')
+            cy.visit('http://localhost/project/bookingForm/')
           })
      it("should test all input fields and select options",()=>{
        cy.get("#fname").type("emmanuelayirebi12")
